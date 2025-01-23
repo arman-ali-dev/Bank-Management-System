@@ -52,6 +52,8 @@ export default function Login() {
         userInfo
       );
 
+      console.log(data);
+
       setUser(data.user);
       Cookies.set("auth-token", data.token, { expires: 30 });
       navigate("/");
@@ -72,7 +74,7 @@ export default function Login() {
           theme: "dark",
         });
       } else {
-        console.error(error);
+        console.error(error.message);
       }
     } finally {
       setIsLoading(false);
