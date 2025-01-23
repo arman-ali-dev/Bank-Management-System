@@ -48,11 +48,9 @@ export default function Login() {
 
     try {
       const { data } = await axios.post(
-        "http://localhost:8000/user/login",
+        "https://ali-bank.onrender.com/api/users/login",
         userInfo
       );
-
-      console.log(data);
 
       setUser(data.user);
       Cookies.set("auth-token", data.token, { expires: 30 });

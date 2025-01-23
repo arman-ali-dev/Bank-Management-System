@@ -15,7 +15,7 @@ export const StatmentProvider = ({ children }) => {
   const fetchStatments = async () => {
     try {
       const { data } = await axios.get(
-        `http://localhost:8000/transections/statements/${user?.accountNumber}`
+        `https://ali-bank.onrender.com/api/transections/statements/${user?.accountNumber}`
       );
 
       setStatements(data.statements);

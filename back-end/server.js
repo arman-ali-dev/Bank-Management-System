@@ -20,8 +20,8 @@ connectMongoDB()
   .then(() => console.log("MongoDB Connected Successfully!"))
   .catch(() => console.log("MongoDB Connection Failed!"));
 
-app.use("/user", userRoute);
-app.use("/transections", transectionRoute);
+app.use("/api/users", userRoute);
+app.use("/api/transections", transectionRoute);
 
 app.use(express.static(path.join(_dirname, "/front-end/dist")));
 

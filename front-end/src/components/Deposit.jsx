@@ -17,7 +17,7 @@ export default function Deposit() {
     setIsLoading(true);
     try {
       const { data } = await axios.post(
-        "http://localhost:8000/transections/deposit",
+        "https://ali-bank.onrender.com/api/transections/deposit",
         {
           pin,
           amount,

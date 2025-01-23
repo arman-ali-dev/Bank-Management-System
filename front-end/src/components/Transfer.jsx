@@ -18,7 +18,7 @@ export default function Transfer() {
 
     try {
       const { data } = await axios.post(
-        "http://localhost:8000/transections/transfer",
+        "https://ali-bank.onrender.com/api/transections/transfer",
         {
           pin,
           amount,

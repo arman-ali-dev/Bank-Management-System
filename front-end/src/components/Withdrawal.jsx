@@ -17,7 +17,7 @@ export default function Withdrawal() {
     setIsLoading(true);
     try {
       const { data } = await axios.post(
-        "http://localhost:8000/transections/withdraw",
+        "https://ali-bank.onrender.com/api/transections/withdraw",
         {
           pin,
           amount,

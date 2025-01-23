@@ -24,7 +24,7 @@ export default function ChangePin() {
     e.preventDefault();
     setIsLoading(true);
     try {
-      await axios.post("http://localhost:8000/user/change-pin", {
+      await axios.post("https://ali-bank.onrender.com/api/users/change-pin", {
         id: user._id,
         pin,
         newPin,

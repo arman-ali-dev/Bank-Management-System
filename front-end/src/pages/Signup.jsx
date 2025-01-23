@@ -53,7 +53,7 @@ export default function Signup() {
 
     try {
       const { data } = await axios.post(
-        "http://localhost:8000/user/register",
+        "https://ali-bank.onrender.com/api/users/register",
         userInfo
       );
 
