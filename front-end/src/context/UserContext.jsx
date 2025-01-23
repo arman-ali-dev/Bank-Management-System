@@ -16,7 +16,7 @@ export const UserProvider = ({ children }) => {
   const fetchUser = async () => {
     try {
       const { data } = await axios.get(
-        "https://ali-bank.onrender.com/api/user/profile",
+        "https://ali-bank.onrender.com/api/users/profile",
         {
           headers: {
             Authorization: `Bearer ${token}`,
